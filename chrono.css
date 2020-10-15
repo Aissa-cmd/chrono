@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    color: #ffffff;
+    background-color: #fa003e;
+}
+
+h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container {
+    font-size: 6rem;
+    color: #ab1a43;
+    font-family: "Rowdies", cursive;
+    font-weight: bold;
+    margin-bottom: 0px;
+    user-select: none;
+}
+
+.flags-container {
+    width: 30rem;
+
+    height: 60%;
+    max-height: 250px;
+    background-color: #f8295d;
+    border-radius: 8px;
+    overflow-y: scroll;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+.flags-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f8295d;
+    border-radius: 0 8px 8px 0;
+}
+
+.flags-container::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #fff;
+    /*border-radius: 0 8px 8px 0;*/
+    border-radius: 8px;
+}
+
+.seconds {
+    color: #ffffff;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    background-color: #fa003e;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin: 0 10px;
+    padding: 10px;
+    outline: none;
+    color: #ffffff;
+    user-select: none;
+}
+
+#play {
+    font-size: 4rem;
+}
+
+button:hover {
+    background-color: #f8295d;
+}
+
+.line-separator {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.flag-position {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 560px) {
+    .counter-container {
+        font-size: 4rem;
+    }
+    .flags-container {
+        width: 20rem;
+        height: 50%;
+    }
+}

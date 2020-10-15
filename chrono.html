@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chrono</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+        />
+        <link rel="shortcut icon" href="./chronoIcon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="chrono.css" />
+    </head>
+    <body>
+        <h1><i class="fas fa-stopwatch-20"></i> Chrono</h1>
+        <div class="container">
+            <div class="counter-container">
+                <span class="hours">00</span><span class="separator hours-minutes-separator">:</span><span class="minutes">00</span><span class="separator minutse-seconds-separator">:</span
+                ><span class="seconds">00</span>
+            </div>
+            <div class="line-separator"></div>
+            <div class="buttons-container">
+                <button id="flags"><i class="fas fa-flag"></i></button>
+                <button id="play" class="start">
+                    <!-- <i class="fas fa-play"></i> -->
+                    <i class="far fa-play-circle"></i>
+                </button>
+                <button id="reset"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="flags-container"></div>
+        </div>
+        <script src="chrono.js"></script>
+    </body>
+</html>
+
+<!-- <i class="fas fa-pause"></i> -->
